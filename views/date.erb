@@ -1,0 +1,5 @@
+Create a template called `date.erb` in `views` that gets rendered via GET
+   `/date`. It should contain an `h1` with the content `Today`
+   <%date = Date.today.strftime("%A, %B %d, %Y")%>
+   <h1>Today</h1>
+   <p><%="The date is date is" + date%></p>
