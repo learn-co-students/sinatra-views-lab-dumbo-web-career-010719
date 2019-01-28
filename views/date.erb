@@ -1,0 +1,3 @@
+<h1>Today</h1>
+<%date, days, months = Time.now, ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]%>
+<p><%="The date is #{days[date.wday]}, #{months[date.month-1]} #{date.day}, #{date.year}"%></p>
